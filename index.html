@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link href="opmaak.css" type="text/css" rel="stylesheet"/>
+
+		<script type="text/javascript" src="javascript.js"></script>
+
+		<!-- Grafiek afstand & voedsel --> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+		<!-- Grafiek afstand -->
+		<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+	    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+
+		<!-- Grafiek water --> 
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+		<script>
+			Chart.defaults.global.defaultFontFamily=" 'GT Walsheim Pro', 'Arial' ";
+			Chart.defaults.global.defaultFontColor = '#FFFFFF';
+		</script>
+
+		<title>SpaceX dashboard</title>
+
+	</head>
+
+	<body>
+
+		<div id="container">
+
+			<header>
+				<figure>
+					<img src="img/logo.png" class="logo"/>
+				</figure>
+			</header>
+
+			<main>
+				
+				<section class="dashboardEnDatum">
+					<h1>Dashboard</h1>
+					<p id="datum"></p>
+				</section>
+
+				<section class="grafiek grafiekAfstand">
+
+					<h2>Afgelegde afstand <strong>week 02/03/2020 - 08/03/2020</strong></h2>
+
+					<div class="holderGrafiekAfstand">
+						
+						<canvas id="afstand" width="350" height="200"></canvas>
+
+					</div>
+
+					<p class="caption grafiekAfstandCaption">De gemiddelde snelheid van de rit is 41.699 km p/u.</p>
+
+
+				</section>
+
+				<section class="grafiek grafiekSnelheid">
+
+
+					<h2>Snelheid in km (x1000)</h2>
+
+					<div class="holderGrafiekSnelheid">
+						
+						<div id="snelheid"></div> 
+
+					</div>
+					
+					<p class="caption grafiekAfstandCaption">De ITS gaat 110.000 km per uur</p>
+
+				</section>
+
+				<section class="grafiek grafiekVoedsel">
+
+					<h2>Voedsel in percentages</h2>
+
+					<div class="holderGrafiekVoedsel">
+					
+						<canvas id="voedsel" width="350" height="200"></canvas>
+
+					</div>
+
+				</section>
+
+				<section class="grafiek grafiekWater">
+					
+					<h2>Water hoeveelheid</h2>
+
+					<div class="holderGrafiekWater">
+					
+						<div id="water"></div>
+					
+					</div>
+
+					<p class="caption grafiekWaterCaption">77% van het watervoorraad is nog over.</p>
+
+				</section>
+
+			</main>
+
+		</div>
+
+	</body>
+
+</html>
