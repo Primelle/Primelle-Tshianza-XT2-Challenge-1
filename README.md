@@ -3,6 +3,7 @@
  Voor challenge 1 heb ik een interface ontworpen en gecodeerd de ruimtevaarders informatie over de reis geeft.
 
 **Informatie**
+
 De dashboard laat het volgende zien:
 - de snelheid van de ruimteschip in km/u uur
 - de afgelegde afstand in de huidige week zien
@@ -18,6 +19,7 @@ De voedselvoorraad heb ik weergegeven in een staafdiagram, omdat er verschillend
 De waterhoeveelheid toon ik aan de hand van een circulaire progress bar. Deze geeft aan hoeveel procent van de waterhoeveelheid nog over is en laat goed zien hoeveel al op is.
 
 **Het ontwerp**
+
 Ik wilde het ontwerp een ruimtelijke sfeer laten uitstralen en heb daarom de grafieken futuristische kleuren gegeven en de achtergrond een donkerpaarse kleur. 
 
 **Breakpoints**
